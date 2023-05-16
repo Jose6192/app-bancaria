@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navbar */
+nav{
+    height: 48px;
+    background-color: #01539F;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+/* cuenta */
+main{
+    display: grid; 
+    height: 144px;   
+}
+main>*{
+    text-align: center;
+}
+/* s */
+.transactions{
+    display: grid;
+    grid-template-areas: 'Titletransactions Titletransactions Titletransactions'
+    'deposit withdrawal payQR';
+    text-align: center;
+}
+
+.Titletransactions{
+    grid-area: Titletransactions;
+}
+.deposit{
+    grid-area: deposit;
+}
+.withdrawal{
+    grid-area: withdrawal;
+}
+.payQR{
+    grid-area: payQR;
+}
+
