@@ -1,3 +1,7 @@
 /* let user = localStorage.getItem(user) */
 
-document.querySelector(".greeting").textContent = "!Holaaa!"
+let user = localStorage.getItem("user")
+let accountBalance = localStorage.getItem("accountBalance")
+
+document.querySelector(".greeting").textContent = `¡Hola ${user}!`
+document.querySelector(".accountBalance").textContent = `$${accountBalance}`
