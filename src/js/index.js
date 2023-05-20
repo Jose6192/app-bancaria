@@ -7,7 +7,7 @@ document.querySelector(".submit").addEventListener("click", function(){
     let password = document.querySelector("#password").value
     /* comprueba que la contraseña de localStorage sea igual a la introducida */
     if(localStorage.getItem("password") == password){
-        window.location.href= "./html/main.html"
+        window.location.href= "http://127.0.0.1:5500/src/html/main.html"
     }else{
         alert("uno de los datos es incorrecto")
     }
